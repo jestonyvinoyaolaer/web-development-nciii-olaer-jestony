@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Organization Officers</title>
+</head>
+<body>
+
+    <h1>School Organization Officers</h1>
+    
+    <table border="1"
+>
+        <!--
+            ADVANCED CODE:
+            <caption> padds a title directly connected to the table.
+        -->
+
+        <caption>Supreme Student Government Officers</caption>
+
+            <thead>
+               <tr>
+                    <th>Category</th>
+                    <th>Position</th>
+                    <th>Name</th>
+                    <th>Grade and Section</th>
+                    <th>Contact Number</th>
+                </tr>
+
+             </thead>
+
+            <!--ADVANCED CODE:
+                <tbody> contains the main schedule information.
+            -->
+
+        <tbody>
+            <tr>
+                <!-- 
+                Combines three vertical cells.
+                This means "Executive Officers" will occupy
+                the Category column for three table rows.
+                -->
+
+                <th rowspan="3">Executive Officers</th>
+
+                <td>President</td>
+                <td>Juan Dela Cruz</td>
+                <td>Grade 12</td>
+                <td>0912-345-6789</td>
+            </tr>
+
+            <tr>
+                <!--
+                The Category cell is not repeated because
+                it is already covered by rowspan="3".
+                -->
+                <td>Vice President</td>
+                <td>Maria Santos</td>
+                <td>Grade 12-Rizal</td>
+                <td>0913-456-7890</td>
+            </tr>
+
+            <tr>
+                <td>Secretary</td>
+                <td>Angela Garcia</td>
+                <td>11</td>
+                <td>0914-567-8901</td>
+            </tr>
+
+            <tr>
+                <!--
+                    ADVANCED CODE:
+                    Another rowspan="3" groups the next three
+                    officers under Supporting Officers.
+                -->>
+
+                <th rowspan="3">Supporting Officers</th>
+
+                <td>Treasurer</td>
+                <td>Pedro Reyes</td>
+                <td>Grade 11-Rizal</td>
+                <td>0915-678-9012</td>
+            </tr>
+
+            <tr>
+                <td>Auditor</td>
+                <td>Mark Mendoza</td>
+                <td>Grade 10-Bonifacio</td>
+                <td>0916-789-0123</td>
+            </tr>
+
+            <tr>
+                <td>Public Information Officer</td>
+                <td>Christine Ramos</td>
+                <td>Grade 10-Mabini</td>
+                <td>0917-890-1234</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    
+</body>
+</html>
