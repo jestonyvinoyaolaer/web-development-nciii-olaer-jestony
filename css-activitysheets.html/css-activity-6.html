@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive School Webpage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #333333;
+        }
+
+        header {
+            background-color: #173b6c;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0d6efd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            Flex: 3;
+         }  
+
+        aside {
+            flex: 1;
+        }
+
+        article,
+        aside {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        article h2,
+        aside h2 {
+            color: #173b6c;
+        }
+
+        article p {
+            line-height: 1.7;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background-color: #173b6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 700px) {
+            main {
+                flex-direction: column;
+            }
+        
+            nav a {
+                 display: block;
+                 margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bright Future Academy</h1>
+        <p>Learning today, leading tomorrow</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Welcome to Our School</h2>
+
+                <p>
+                    Bright Future Academy provides quality education and
+                    meaningful learning experiences for every student.
+                </p>
+
+                <p>
+                    Our school uses modern technology, interactive learning
+                    materials, and student-centered teaching methods.
+                </p>
+    
+            </article>
+        </section>
+
+         <aside>
+            <h2>Announcements</h2>
+
+            <ul>   
+                <li>Enrollment is now open.</li>
+                <li>Classes begin on July 6.</li>
+                <li>Orientation will be held in the school gymnasium.</li>
+            </ul>
+        </aside>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bright Future Academy. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
