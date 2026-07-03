@@ -4,9 +4,9 @@
  Changing a variable updates all elements that use it.
 ================================================== */
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --dark-color: #172033;
+    --primary-color: #0e0bf5;
+    --primary-dark: #1c20f3;
+    --dark-color: #0e0601;
     --text-color: #475569;
     --light-text: #64748b;
     --white-color: #ffffff;
