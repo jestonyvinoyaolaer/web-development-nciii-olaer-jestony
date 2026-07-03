@@ -1,0 +1,232 @@
+/* ==================================================
+ 1. CSS VARIABLES
+ Variables allow us to reuse colors and sizes.
+ Changing a variable updates all elements that use it.
+================================================== */
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --dark-color: #172033;
+    --text-color: #475569;
+    --light-text: #64748b;
+    --white-color: #ffffff;
+    --background-color: #f8fafc;
+    --alternate-background: #eef4ff;
+    --border-color: #dbe3ef;
+    --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    --border-radius: 14px;
+    --maximum-width: 1150px;
+}
+
+
+/* ==================================================
+ 2. CSS RESET
+ The browser adds default margins and padding.
+ This reset gives us more consistent control.
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Enables smooth scrolling when navigation links are clicked. */
+html {
+ scroll-behavior: smooth;
+}
+
+
+
+/* ==================================================
+ 3. GENERAL BODY STYLING
+================================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Prevents images from becoming wider than their containers. */
+img {
+ display: block;
+ max-width: 100%;
+}
+
+
+/* Removes the default underline from links. */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Removes the default bullet points from unordered lists. */
+ul {
+    list-style: none;
+}
+
+
+/* Gives headings a darker color and tighter line spacing. */
+h1,
+h2,
+h3 {
+    color: var(--dark-color);
+    line-height: 1.25;
+}
+
+
+/* A reusable container keeps content centered and limits its width. */
+.container {
+    width: 90%;
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+}
+
+
+/* Reusable spacing for all major webpage sections. */
+.section {
+    padding: 90px 0;
+}
+
+
+/* Alternate background separates one section from another. */
+.alternate-section {
+     background-color: var(--alternate-background);
+}
+
+
+
+/* ==================================================
+ 4. HEADER AND NAVIGATION
+================================================== */
+
+.site-header {
+ position: sticky;
+
+    /* Keeps the header at the top while scrolling. */
+    top: 0;
+
+    /* Places the header above the other webpage content. */
+    z-index: 1000;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border-color);
+    }
+
+
+    /* Flexbox places the logo and navigation links in one row. */
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Styles the initials used as the website logo. */
+.logo {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* Displays the navigation links horizontally. */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Styles each navigation link. */
+.nav-links a {
+    color: var(--dark-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+
+/* Changes the link color when the mouse points to it. */
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+/* ==================================================
+ 5. HERO SECTION
+================================================== */
+
+.hero {
+    min-height: calc(100vh - 70px);
+ }
+
+    /* Centers the content vertically inside the hero section. */
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.08),
+            rgba(255, 255, 255, 0.9)
+        );
+
+    
+    /* Grid creates two columns: text on the left and image on the right. */
+    .hero-container {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            align-items: center;
+            gap: 70px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+    }    
+
+
+    .intro-text {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+    }
+
+
+    .hero-content h1 {
+            font-size: clamp(2.8rem, 7vw, 5rem);
+            margin-bottom: 8px;
+    }
+
+
+    /*
+    clamp() creates responsive text.
+    The text grows with the screen but remains within
+    the minimum and maximum sizes.
+    */
+    .hero-content h2 {
+            color: var(--light-text);
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            font-weight: 600;
+            margin-bottom: 24px;
+     }
+
+
+    .hero-description {
+            max-width: 650px;
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+    }
+
+
+    /* Places the two buttons beside each other. */
+    .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+    }
+

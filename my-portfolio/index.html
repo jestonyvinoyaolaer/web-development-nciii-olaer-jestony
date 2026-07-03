@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Defines the character encoding of the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description used by search engines -->
+    <meta
+        name="description" 
+        content="Personal portfolio of Jestony Olaer, an aspiring web developer."
+    >
+
+    <!-- Title displayed in the browser tab -->
+    <title>Jestony Olaer | Portfolio</title>
+
+    <!-- Connects the external CSS file to this HTML document -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+
+    <!-- =========================
+            HEADER AND NAVIGATION 
+    ============================-->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <!-- Portfolio Logo or name-->
+            <a href="#home" class="name">Jestony Olaer</a>
+
+            <!-- Main Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>  
+    </header>
+
+    <!-- Main Content of the webpage -->
+    <main>
+
+        <!-- =======================
+                HOME SECTION 
+        ==========================-->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                
+                <!-- Introduction-->
+                <div class="hero-content">
+                    <p class="intro-text">Hello, my name</p>
+
+                    <h1>Jestony Olaer</h1>
+
+                    <h2>Web Developer</h2>
+
+                    <p class="hero-description">
+                        I create simple, responsive and user-friendly websites using HTML5, CSS, JavaScript, and PHP
+                    </p>
+
+                    <!-- Call to Action Buttons-->
+                    <div class="hero buttons">
+                        <a href="#projects" class="button primary-button">
+                            View My Pojects
+                        </a>
+                        <a href="#contact" class="button secondary-button">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="hero-image">
+                    <img 
+                        src="images/profile.jpg" 
+                        alt="Profile Image of Jestony Olaer"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =======================
+                ABOUT SECTION
+        ==========================-->
+        <section id="about" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>Get to know me</p>
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <h3>Who am I?</h3>
+
+                        <p>
+                            I am Jestony Olaer, a passionate web developer with a keen interest in creating dynamic and responsive websites. I enjoy learning new technologies and applying them to build user-friendly web applications.
+                        </p>
+
+                        <p>
+                            My goal is to improve my programming skills and
+                            develop technology-based solutions that can help
+                            businesses, schools, and communities.
+                        </p>
+                    </div>
+
+                    <!-- Personal Information -->
+                     <div class="personal-information">
+                        <div class="information-item">
+                            <span>Name</span>
+                            <span>: Jestony Olaer</span>
+                        </div>
+
+                        <div class="information-item">
+                            <span>Email</span>
+                            <p>: jestonyolaer@example.com</p>
+                        </div>
+
+                        <div class="information-item">
+                            <span>Location</span>
+                            <p>: Davao Oriental, Philippines</p>
+                        </div>
+
+                        <div class="information-item">
+                            <span>Specialization</span>
+                            <p>: Web Development</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================
+                SKILLS SECTION
+        ==========================-->
+        <section id="skills" class="section alternate-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>What I can do</p>
+                    <h2>My Skills</h2>
+                </div>
+
+                <div class="skills-card">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">HTML5</div>
+                        <h3>HTML5</h3>
+                        <p>
+                            Creating organized and semantic webpage structures.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">CSS</div>
+                            <h3>CSS</h3>
+                            <p>
+                                Designing responsive, attractive and accessible web interfaces.
+                            </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Adding basic interaction and dynamic behavior webpages.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">PHP</div>
+                        <h3>PHP</h3>
+                        <p>
+                            Developing server-side applications and processing form data.
+                        </p>
+                    </article>
+                    
+                    <article class="skill-card">
+                        <div class="skill-icon">DB</div>
+                        <h3>MySQL</h3>
+                        <p>
+                            Creating and managing databases for web
+                            applications.
+                        </p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">UI</div>
+                        <h3>UI Design</h3>
+                        <p>
+                            Planning clean and user-friendly website
+                        layouts.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+                 PROJECTS SECTION
+            ========================== -->
+            <section id="projects" class="section">
+                <div class="container">
+
+                <div class="section-heading">
+                <p>My recent work</p>
+                <h2>Projects</h2>
+                </div>
+
+                <div class="projects-grid"></div>
+
+                      <article class="project-card">
+                            <div class="project-number">01</div>
+
+                            <div class="project-content">
+                                <h3>Student Information System</h3>
+                            
+                                <p>
+                                    A web-based system for managing student
+                                    profiles, enrollment records, and grades.
+                                </p>
+
+                                <div class="project-technologies">
+                                    <span>HTML5</span>
+                                    <span>CSS</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                </div>
+
+                                <a href="#" class="project-link">
+                                            View Project
+                                </a>
+                            </div>
+                        </article>  
+
+                        <article class="project-card">
+                            <div class="project-number">02</div>
+
+                            <div class="project-content">
+                                <h3>Online Learning Portal</h3>
+
+                                <p>
+                                    An educational website where students can
+                                    view
+                                    lessons, activities, quizzes, and scores.
+                                </p>
+
+                                <div class="project-technologies">
+                                    <span>HTML5</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="#" class="project-link">
+                                    View Project
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-number">03</div>
+
+                            <div class="project-content">
+                                <h3>Business Inventory System</h3>
+                            
+                                <p>
+                                    A simple inventory system that records
+                                    products,
+                                    available stocks, sales, and suppliers.
+                                </p>
+
+                                <div class="project-technologies">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Bootstrap</span>
+                                </div>
+
+                                <a href="#" class="project-link">
+                                        View Project
+                                </a>
+                            </div>
+                        </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+                 CONTACT SECTION
+         ========================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-container">
+
+                <div class="contact-information">
+                    <p class="contact-label">Let us work together</p>
+                    <h2>Contact Me</h2>
+
+                    <p>
+                        You may contact me for website development,
+                        collaboration, school projects, or other technology
+                        concerns.
+                    </p>
+
+                    <div class="contact-details">
+                        <p>
+                            <strong>Email:</strong>
+                            jes@example.com
+                        </p>
+
+                        <p>
+                            <strong>Phone:</strong>
+                            +63 912 345 6789
+                        </p>
+
+                         <p>
+                            <strong>Location:</strong>
+                            Davao Oriental, Philippines
+                        </p>
+                    </div> 
+                </div>
+
+                <!-- Contact form -->
+                <form class="contact-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="name">Complete Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your complete name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter the message subject"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="button primary-button">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 Juan Dela Cruz. All rights reserved.
+            </p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Facebook profile">Facebook</a>
+                <a href="#" aria-label="GitHub profile">GitHub</a>
+                <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+            </div>
+
+
+        </div>
+    </footer>
+                           
+</body>
+</html>
